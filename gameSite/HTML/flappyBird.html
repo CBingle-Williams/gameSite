@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+        <link rel="stylesheet" href="../CSS/flappyBirdStyles.css">
+    </head>
+    <body>
+        <div onmousedown="accelerate(-8.0)" id="canvas" class="container">
+            <div id="first" class="parent">
+                <div id="top" class="box top"></div>
+                <div id="bottom" class="box bottom"></div>
+            </div>
+            <div id="second" class="parent">
+                <div id="top" class="box top"></div>
+                <div id="bottom" class="box bottom"></div>
+            </div>
+            <div id="bird" class="square"><img src="../IMG/birdFly.gif" height='50px' width="50px"></div>
+            <div class="modal">
+                <div id="score"><img src="../IMG/score.png" width="100px"></div>
+                <div id="counter">0</div>
+                <div id="highscore"></div>
+                <div id="restart"><img src="../IMG/restart.png" width="150px"></div>
+                <div id="leaderboard"><img src="../IMG/add-to-leaderboard.png" width="300px"></div>
+            </div>
+            <div class="score">0</div>
+            <!--<div class="square"></div>-->
+        </div>
+        <script src="../JS/flappyBirdLogic.js"></script>
+    </body>
+</html>

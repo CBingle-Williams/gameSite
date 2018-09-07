@@ -1,0 +1,74 @@
+body {
+    margin: 0px auto;
+    width: 950px;
+    height: 600px;
+}
+
+.container {
+    border: 1px solid black;
+    margin: 0px 0px;
+    width: 950px;
+    height: 600px;
+    background-color: violet;
+}
+
+table {
+    margin-left: 1px;
+    float: left;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+}
+
+th {
+    border: 1px solid black;
+}
+
+.black {
+    background-color: black;
+}
+
+.blue {
+    background-color: #00FFFF;
+}
+
+.red {
+    background-color: red;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.sideBar {
+    width: 349px;
+    height: 600px;
+    margin: 0px 0px;
+    float: right;
+}
+
+.button {
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    background-color: lightgrey;
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#start { 
+    display: none;
+}
+
+#next {
+    display: block;
+}
+
+#AI {
+    display: none;
+}

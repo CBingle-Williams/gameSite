@@ -1,0 +1,86 @@
+body{
+    width: 480px;
+    height: 640px;;
+    margin: 0px auto;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: auto 0px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../IMG/background.png');
+    background-size: 480px 640px;
+}
+
+.parent {
+    position: absolute;
+    right: -50px;
+    height: 100%;
+}
+
+.box {
+    background-image: url('../IMG/pipe.png');
+    background-size: 80px auto;
+    width: 80px;
+    height: 220px;
+    position: absolute;
+}
+
+.top {
+    top: 0px;
+    transform: rotate(-180deg)
+}
+
+.bottom {
+    bottom: 0px;
+}
+
+.square {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 400px;
+    top: 300px;
+}
+
+.modal{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    left: 90px;
+    top: 170px;
+    display: none;
+}
+
+#restart {
+    margin: 15px 75px;
+}
+
+#score {
+    margin: 0px 100px;
+}
+
+#counter {
+    top: 35px;
+    position: absolute;
+    left: 140px;
+}
+
+#highscore {
+    top: 80px;
+    position: absolute;
+    left: 140px;
+}
+
+.score {
+    position: absolute;
+    top: 180px;
+    left: 220px;
+    display: none;
+}

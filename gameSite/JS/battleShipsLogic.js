@@ -1,28 +1,6 @@
-var player1 = [
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0]
-];
+var player1 = [];
 
-var player2 = [
-    [1,0,1,1,0,0,0,0,0,0],
-    [1,0,0,0,0,0,0,0,0,0],
-    [1,0,0,0,0,0,0,0,0,0],
-    [1,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0],
-    [0,0,0,0,0,0,0,0,0,0]
-];
+var player2 = [];
 
 var gameBoard1 = [ //player1's
     [0,0,0,0,0,0,0,0,0,0],
@@ -58,9 +36,6 @@ var next = document.getElementById('next').addEventListener('click', function(){
 });
 var div = document.getElementById('table');
 
-console.log(player1.length);
-console.log(player1[0].length);
-
 function gamer(){
     drawTable(player1,false);
     alert('Player 1: this is your board');
@@ -72,23 +47,26 @@ function showSecond(){
 }
 
 function generateBoard(){
+    value = 0
+    player1 = [...Array(10)].map(e => Array(10).fill(value));
     place(player1,5);
     place(player1,4);
     place(player1,3);
     place(player1,3);
     place(player1,2);
-    place(player2,5);
-    place(player2,4);
-    place(player2,3);
-    place(player2,3);
-    place(player2,2);
+    // player2 = [...Array(10)].map(e => Array(10).fill(value));
+    // place(player2,5);
+    // place(player2,4);
+    // place(player2,3);
+    // place(player2,3);
+    // place(player2,2);
 }
 
 function drawTable(player, select){
     let table = '';
     for(let x = 0; x < player.length; x++){
         table += '<tr>';
-        for(let y = 0; y < player1[0].length; y++){
+        for(let y = 0; y < player[0].length; y++){
             if (select == false){
                 if (player[x][y] == 4){
                     table += "<th class='red' id='row" + x +"col" + y + "'></th>";
